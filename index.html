@@ -368,15 +368,14 @@ div.tocify {
 <div id="menghubungkan-file-rmd-dengan-css" class="section level2">
 <h2>2.2 Menghubungkan file rmd dengan css</h2>
 <p>untuk menghubungkan file.rmd dan file.css ini diperlukan kode sebagai berikut</p>
-<pre><code>body {
-.watermark {
-  opacity: 0.2;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  font-size: 500%;
-  color: #00407d;
-}</code></pre>
+<pre><code>---
+title: &quot;...&quot;
+author: &quot;...&quot;
+date: &quot;...&quot;
+output: 
+  html_document:
+    css: watermark-css.css
+---</code></pre>
 </div>
 <div id="menambahkan-logo-watermark" class="section level2">
 <h2>2.3 Menambahkan logo watermark</h2>
